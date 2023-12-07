@@ -1,0 +1,131 @@
+:root {
+  --color-primary: #555555;
+  --color-primary-dark: #303030;
+  --color-secondary: #9da4bd;
+  --color-secondary-transparent: rgba(157, 164, 189, 0.6);
+  --color-brand: #ff6c00;
+  --color-white: #ffffff;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #F7F7F7;
+}
+
+/* Base */
+body {
+  color: var(--color-primary);
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-background-primary); 
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 130px 0;
+}
+
+/* Header */
+.header {
+    background-color: #555555; /*remove*/
+}
+.header-link {
+  color: var(--color-white);
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: var(--color-brand);
+}
+
+.button-light {
+  color: var(--color-white);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  border: 1px solid var(--color-brand);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button-light:hover {
+  background-color: var(--color-brand);
+}
+
+/* Hero section */
+.socials-link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.socials-link:hover {
+  color: var(--color-brand);
+}
+
+.section-tagline {
+  color: var(--color-secondary-transparent);
+  font-size: 11px;
+  line-height: 1.36;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  color: var(--color-white);
+  font-size: 72px;
+  line-height: 1.16;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+}
+
+.hero-text {
+  color: var(--color-secondary);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+.carousel-button {
+  color: var(--color-white);
+  font-size: 11px;
+  line-height: 1.36;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-button[disabled] {
+  color: var(--color-secondary-transparent);
+  cursor: not-allowed;
+}
+
+/* About section */
