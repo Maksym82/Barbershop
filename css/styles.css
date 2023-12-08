@@ -185,3 +185,20 @@ ul {
   display: flex;
   gap: 30px;
 }
+
+/* Prices section */
+
+/* Masters section */
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.masters-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.master {
+  text-align: center;
+}
