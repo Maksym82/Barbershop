@@ -78,6 +78,25 @@ ul {
 .header {
   background-color: #555555; /*remove*/
 }
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 70px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .header-link {
   color: var(--color-white);
   font-size: 12px;
@@ -158,3 +177,11 @@ ul {
 }
 
 /* About section */
+.about-container {
+  display: flex;
+  gap: 64px;
+}
+.about-images {
+  display: flex;
+  gap: 30px;
+}
