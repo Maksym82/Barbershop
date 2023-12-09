@@ -10,6 +10,10 @@
 }
 
 /* Base */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--color-primary);
   font-family: 'Open Sans', sans-serif;
@@ -27,6 +31,12 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+}
+
+img {
+  display: block;
+  /* min-width: 100%; */
+  height: auto;
 }
 
 ul {
@@ -111,6 +121,7 @@ ul {
 }
 
 .button-light {
+  padding: 12px 20px;
   color: var(--color-white);
   background-color: transparent;
   font-size: 12px;
@@ -187,6 +198,35 @@ ul {
 }
 
 /* Prices section */
+.services-section {
+  background-color: #aa6c6c;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.services-item {
+  flex-basis: calc(100% / 2);
+  padding: 10px 40px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-name {
+  margin-bottom: 0;
+}
+
+.services-action {
+  display: flex;
+  justify-content: center;
+}
+
 
 /* Masters section */
 .masters-list {
