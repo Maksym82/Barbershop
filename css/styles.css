@@ -192,6 +192,7 @@ ul {
   display: flex;
   gap: 64px;
 }
+
 .about-images {
   display: flex;
   gap: 30px;
@@ -290,6 +291,10 @@ ul {
 }
 
 /* Masters section */
+.masters-section {
+  background-color: var(--color-background-secondary);
+}
+
 .masters-list {
   display: flex;
   flex-wrap: wrap;
@@ -302,4 +307,30 @@ ul {
 
 .master {
   text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-background-secondary);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 55px;
+}
+
+.footer-text {
+  margin-bottom: 0;
+  color: var(--color-secondary);
+  font-size: 11px;
+  line-height: 1.36;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 40px;
 }
