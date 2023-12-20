@@ -97,8 +97,10 @@ ul {
 
 /* Header */
 .header {
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding-top: 40px;
-  background-color: #555555; /*remove*/
 }
 
 .header-container {
@@ -120,12 +122,25 @@ ul {
 }
 
 .header-link {
+  position: relative;
+  padding: 24px 0;
   color: var(--color-white);
   font-size: 12px;
   line-height: 1.33;
   font-weight: 600;
   letter-spacing: 1.2px;
   text-decoration: none;
+}
+
+.header-link.current::after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+  border-radius: 2px;
+  content: '';
 }
 
 .header-link:hover {
@@ -244,10 +259,10 @@ ul {
 /* Services section */
 .services-section {
   background-image: linear-gradient(
-    rgba(17, 19, 25, 0.5),
-    rgba(17, 19, 25, 0.5)
-  ),
-  url('../images/haircut-tools.jpg');
+      rgba(17, 19, 25, 0.5),
+      rgba(17, 19, 25, 0.5)
+    ),
+    url('../images/haircut-tools.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -369,6 +384,26 @@ ul {
 
 .master {
   text-align: center;
+}
+
+.master-info {
+  padding: 30px 20px 0 20px;
+}
+
+.master-name {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.36px;
+  margin-bottom: 8px;
+}
+
+.master-job {
+  color: var(--color-brand);
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.28px;
+  margin-bottom: 30px;
 }
 
 .soc-list {
