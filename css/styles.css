@@ -386,6 +386,27 @@ ul {
   text-align: center;
 }
 
+.master-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.master-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--color-white);
+  background-color: var(--color-brand);
+  transform: translateY(100%);
+  transition: transform 300ms;
+}
+
+.master-image:hover .master-description {
+  transform: translateY(0);
+}
+
 .master-info {
   padding: 30px 20px 0 20px;
 }
