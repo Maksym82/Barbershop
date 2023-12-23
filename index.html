@@ -43,7 +43,7 @@
             </ul>
           </nav>
           <a class="header-link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="button" type="button">онлайн-запись</button>
+          <button class="button" type="button" data-modal-open>онлайн-запись</button>
         </div>
       </div>
     </header>
@@ -395,6 +395,18 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg>
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
