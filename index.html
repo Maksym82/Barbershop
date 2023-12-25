@@ -400,14 +400,27 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
-          <svg>
-            <use href="./images/icons.svg#icon-x-close"></use>
+          <svg class="modal-icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h2>Modal Title</h2>
+        <form name="contact-form" autocomplete="on">
+          <label for="user-name">Name</label>
+          <input id="user-name" type="text" name="user-name" autofocus />
+
+          <label for="user-comment">Comment</label>
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            placeholder="Text input"
+          ></textarea>
+        </form>
       </div>
+      `
     </div>
 
     <script src="./js/modal.js"></script>
