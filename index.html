@@ -387,6 +387,44 @@
           </ul>
         </div>
       </section>
+      <section class="section contact-section">
+        <div class="container">
+          <div class="contact-container">
+            <div class="contact-form">
+              <p class="section-title section-title-light">Онлайн-запись</p>
+
+              <form name="contact-form">
+                <label for="user-name">Имя*</label>
+                <input type="text" name="user-name" id="user-name" />
+
+                <label for="user-phone">Телефон*</label>
+                <input type="tel" name="user-phone" id="user-phone" />
+
+                <label for="user-message">Сообщение</label>
+                <textarea name="user-message" id="user-message"></textarea>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h2 class="section-title section-title-light">Контакты</h2>
+              <address>
+                <ul>
+                  <li>
+                    <a class="contact-link" href="#">
+                      <svg class="contact-icon">
+                        <use href="./images/icons.svg#icon-map-pin"></use>
+                      </svg>
+                      ул. Васильковая, 7А Киев, 08132
+                    </a>
+                  </li>
+                  <li>
+                    <a href=""></a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -400,7 +438,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="modal-icon">
@@ -408,19 +446,8 @@
           </svg>
         </button>
         <h2>Modal Title</h2>
-        <form name="contact-form" autocomplete="on">
-          <label for="user-name">Name</label>
-          <input id="user-name" type="text" name="user-name" autofocus />
-
-          <label for="user-comment">Comment</label>
-          <textarea
-            name="user-comment"
-            id="user-comment"
-            placeholder="Text input"
-          ></textarea>
-        </form>
+        <form name="contact-form" autocomplete="on"></form>
       </div>
-      `
     </div>
 
     <script src="./js/modal.js"></script>
