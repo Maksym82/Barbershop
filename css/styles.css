@@ -7,6 +7,7 @@
   --color-white: #ffffff;
   --color-background-primary: #ffffff;
   --color-background-secondary: #f7f7f7;
+  --color-background-contacts: #191c26;
 }
 
 /* Base */
@@ -555,6 +556,76 @@ ul {
   gap: 40px;
 }
 
+/* Contact section */
+.contact-section {
+  background-color: var(--color-background-contacts);
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px 30px;
+}
+
+.form-field:first-child,
+.form-field:nth-child(2) {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.form-field:last-child {
+  flex-basis: 100%;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+  resize: none;
+}
+/* Contact info */
+.contact-info {
+  width: 50%;
+}
+.contact-list {
+  max-width: 260px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  gap: 16px;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+  text-decoration: none;
+}
+
+.link-underline {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  fill: transparent;
+  stroke: currentColor;
+}
+
 /* Modal */
 .backdrop {
   position: fixed;
@@ -617,5 +688,3 @@ ul {
   height: 8px;
   margin: auto;
 }
-
-

@@ -393,23 +393,48 @@
             <div class="contact-form">
               <p class="section-title section-title-light">Онлайн-запись</p>
 
-              <form name="contact-form">
-                <label for="user-name">Имя*</label>
-                <input type="text" name="user-name" id="user-name" />
+              <form class="form" name="contact-form">
+                <div class="form-field">
+                  <label class="form-label" for="user-name">Имя*</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                  />
+                </div>
 
-                <label for="user-phone">Телефон*</label>
-                <input type="tel" name="user-phone" id="user-phone" />
+                <div class="form-field">
+                  <label class="form-label" for="user-phone">Телефон*</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                  />
+                </div>
 
-                <label for="user-message">Сообщение</label>
-                <textarea name="user-message" id="user-message"></textarea>
+                <div class="form-field">
+                  <label class="form-label" for="user-message">Сообщение</label>
+                  <textarea
+                    class="form-input"
+                    name="user-message"
+                    id="user-message"
+                  ></textarea>
+                </div>
               </form>
             </div>
             <div class="contact-info">
               <h2 class="section-title section-title-light">Контакты</h2>
               <address>
-                <ul>
+                <ul class="contact-list">
                   <li>
-                    <a class="contact-link" href="#">
+                    <a
+                      class="contact-link"
+                      href="https://maps.app.goo.gl/mvHNYEiA7kCzZnLy7"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
                       <svg class="contact-icon">
                         <use href="./images/icons.svg#icon-map-pin"></use>
                       </svg>
@@ -417,7 +442,23 @@
                     </a>
                   </li>
                   <li>
-                    <a href=""></a>
+                    <a class="contact-link" href="tel:+380441111111">
+                      <svg class="contact-icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="contact-link link-underline"
+                      href="mailto:barbershop@email.com"
+                    >
+                      <svg class="contact-icon">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
                   </li>
                 </ul>
               </address>
