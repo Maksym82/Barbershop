@@ -393,7 +393,7 @@
             <div class="contact-form">
               <p class="section-title section-title-light">Онлайн-запись</p>
 
-              <form class="form" name="contact-form">
+              <form class="form" name="contact-form" autocomplete="on">
                 <div class="form-container">
                   <div class="form-field">
                     <label class="visually-hidden" for="user-name">Имя*</label>
@@ -403,6 +403,7 @@
                       name="user-name"
                       id="user-name"
                       placeholder="Имя*"
+                      required
                     />
                   </div>
 
@@ -416,18 +417,19 @@
                       name="user-phone"
                       id="user-phone"
                       placeholder="Телефон*"
+                      required
                     />
                   </div>
 
                   <div class="form-textarea">
-                    <label class="form-label" for="user-message"
-                      >Сообщение</label
-                    >
                     <textarea
                       class="form-input textarea"
                       name="user-message"
                       id="user-message"
                     ></textarea>
+                    <label class="form-label" for="user-message">
+                      Сообщение
+                    </label>
                   </div>
                 </div>
                 <button class="form-button button" type="submit">
