@@ -20,6 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -102,7 +103,7 @@
               />
             </div>
             <div class="about-content">
-              <h2 class="section-tagline">О нас</h2>
+              <h2 class="section-tagline" data-aos="fade-left">О нас</h2>
               <p class="section-title">Лучший Барбершоп твоего города</p>
               <p>
                 Если ты хочешь добавить в свой образ больше уверенности – тебе
@@ -127,7 +128,7 @@
           <p class="section-tagline section-tagline-light">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="section-title section-title-light">Услуги и цены</h2>
+          <h2 class="section-title section-title-light" data-aos="flip-left">Услуги и цены</h2>
           <ul class="services-list">
             <li class="services-item">
               <div class="service">
@@ -505,5 +506,10 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
