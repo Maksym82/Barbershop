@@ -133,6 +133,7 @@ ul {
   font-weight: 600;
   letter-spacing: 1.2px;
   text-decoration: none;
+  transition: color 300ms linear;
 }
 
 .header-link.current::after {
@@ -848,5 +849,3 @@ ul {
   width: 160px;
   height: 40px;
 }
-
-
