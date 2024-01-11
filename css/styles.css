@@ -698,8 +698,6 @@ ul {
 
 .modal {
   position: absolute;
-  /* top: 50%;
-  left: 50%; */
   min-width: 530px;
   min-height: 400px;
   border-radius: 10px;
@@ -829,7 +827,7 @@ ul {
   border-bottom: 1px solid var(--color-form-line);
   resize: none;
   color: var(--color-white);
-
+  outline: none;
   transition: border 300ms linear;
 }
 
