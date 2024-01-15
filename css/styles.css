@@ -368,7 +368,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  width: 370px;
+  max-width: 450px;
 }
 
 .achievements-item {
@@ -398,7 +398,7 @@ ul {
   color: var(--color-primary-dark);
   font-size: 42px;
   line-height: 1.36;
-  font-weight: 700;
+  font-weight: 200;
   letter-spacing: 2.1px;
 }
 
@@ -602,6 +602,16 @@ ul {
   flex-basis: calc((100% - 30px) / 2);
 }
 
+.form-field:hover .form-input {
+  border-bottom: 1px solid var(--color-white);
+  cursor: pointer;
+}
+
+.form-field:hover .form-label {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
 .form-label,
 .form-input::placeholder {
   position: absolute;
@@ -613,6 +623,7 @@ ul {
   line-height: 1.36;
   font-weight: 600;
   letter-spacing: 1.1px;
+  transition: color 300ms linear;
 }
 
 .form-input {
@@ -624,20 +635,29 @@ ul {
   line-height: 1.36;
   font-weight: 600;
   letter-spacing: 1.1px;
+  outline: none;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid currentColor;
+  transition: border 300ms linear;
+}
+
+
+.form-input:focus + .form-label {
+  color: var(--color-white);
+  transform: translateY(-100%);
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  color: var(--color-white);
+  transform: translateY(-100%);
 }
 
 .form-input:focus {
-  color: var(--color-white);
-  outline: none;
+  border-bottom: 1px solid var(--color-white);
 }
 
-.form-input::placeholder {
-  color: currentColor;
-}
-
+/* Textarea */
 .form-textarea {
   position: relative;
   flex-basis: 100%;
@@ -652,6 +672,10 @@ ul {
 
 .textarea:focus + .form-label {
   color: var(--color-white);
+}
+
+.form-button {
+  width: 160px;
 }
 
 /* Contact info */
@@ -767,17 +791,24 @@ ul {
   margin-bottom: 20px;
 }
 
+.modal-field:hover 
+.modal-field:focus {
+  border-bottom: 1px solid var(--color-white);
+  cursor: pointer;
+}
+
 .modal-input:hover,
 .modal-input:focus {
   border-bottom: 1px solid var(--color-white);
   cursor: pointer;
-}
+} */
+
 
 .modal-label:hover,
 .modal-label:focus {
   color: var(--color-white);
   cursor: pointer;
-}
+}  
 
 .modal-input {
   width: 100%;
@@ -814,6 +845,7 @@ ul {
   transition: transform 300ms linear, color 300ms linear;
 }
 
+/* Textarea */
 .modal-field-text {
   position: relative;
   margin-bottom: 44px;

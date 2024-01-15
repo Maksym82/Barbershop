@@ -404,34 +404,36 @@
         <div class="container">
           <div class="contact-container">
             <div class="contact-form">
-              <p class="section-title section-title-light">Онлайн-запись</p>
+              <h2 class="section-title section-title-light">Онлайн-запись</h2>
 
               <form class="form" name="contact-form" autocomplete="on">
                 <div class="form-container">
                   <div class="form-field">
-                    <label class="visually-hidden" for="user-name">Имя*</label>
                     <input
                       class="form-input"
                       type="text"
                       name="user-name"
                       id="user-name"
-                      placeholder="Имя*"
+                      placeholder=" "
+                      title="Введите имя"
                       required
                     />
+                    <label class="form-label" for="user-name">Имя*</label>
                   </div>
 
                   <div class="form-field">
-                    <label class="visually-hidden" for="user-phone"
-                      >Телефон*</label
-                    >
                     <input
                       class="form-input"
                       type="tel"
                       name="user-phone"
                       id="user-phone"
-                      placeholder="Телефон*"
-                      required
+                      placeholder=" "
+                      pattern="[\+]\d{2}\[\(]\d{3}[\)]\\d{3}[\-]\d{2}[\-]\d{2}"
+                      title="+38(050)111-11-11"
+                      minlength="13"
+                      maxlength="17"
                     />
+                    <label class="form-label" for="user-phone">Телефон*</label>
                   </div>
 
                   <div class="form-textarea">
@@ -439,10 +441,10 @@
                       class="form-input textarea"
                       name="user-message"
                       id="user-message"
+                      placeholder=" "
+                      title="Введите сообщение"
                     ></textarea>
-                    <label class="form-label" for="user-message">
-                      Сообщение
-                    </label>
+                    <label class="modal-label" for="modal-text">Сообщение</label>
                   </div>
                 </div>
                 <button class="form-button button" type="submit">
@@ -513,6 +515,7 @@
           </svg>
         </button>
         <h2 class="modal-title">Онлайн-запись</h2>
+
         <form class="modal-form" name="modal-form" autocomplete="on">
           <div class="modal-container">
             <div class="modal-field">
@@ -541,6 +544,7 @@
               <label class="modal-label" for="modal-tel">Телефон*</label>
             </div>
           </div>
+
           <div class="modal-field-text">
             <textarea
               class="modal-text"
