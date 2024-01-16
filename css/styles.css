@@ -93,11 +93,14 @@ ul {
   line-height: 1.16;
   font-weight: 700;
   letter-spacing: 2.1px;
+  margin-bottom: 44px;
 }
 
 .section-title-light {
   color: var(--color-white);
 }
+
+.section-
 
 /* Header */
 .header {
