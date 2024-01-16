@@ -57,6 +57,8 @@ ul {
 /* Section */
 .section {
   padding: 130px 0;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .section-tagline {
@@ -598,10 +600,16 @@ ul {
 /* Contact section */
 .contact-section {
   background-color: var(--color-background-contacts);
+  background-image: url('../images/contacts-bg.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .contact-container {
   display: flex;
+  
 }
 
 .contact-form {
@@ -726,6 +734,8 @@ ul {
 /* Contact info */
 .contact-info {
   width: 50%;
+  padding-left: 100px;
+
 }
 .contact-list {
   max-width: 260px;
