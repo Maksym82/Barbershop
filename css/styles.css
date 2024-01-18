@@ -320,6 +320,10 @@ ul {
 }
 
 /* About section */
+.about-section {
+  padding: 130px 75px 130px 55px;
+}
+
 .about-container {
   display: flex;
   gap: 64px;
