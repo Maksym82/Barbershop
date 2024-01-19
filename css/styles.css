@@ -100,8 +100,6 @@ ul {
   color: var(--color-white);
 }
 
-
-
 /* Header */
 .header {
   position: absolute;
@@ -366,28 +364,68 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 130px 55px
+  padding: 130px 55px;
+}
+
+.services-container {
+  display: flex;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .services-list {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  
+  width: 585px;
+  height: 240px;
+  padding: 30px 40px;
+}
+
+.services-list-left {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.services-list-right {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .services-item {
-  flex-basis: calc(100% / 2);
-  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.services-list-left .services-item:last-child {
+  margin: 0;
+}
+
+.services-list-right .services-item:last-child {
+  margin: 0;
+}
+
+.service-name {
+  color: var(--color-secondary);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+  margin-bottom: 0;
+}
+
+.services-price {
+  text-align: right;
 }
 
 .services-item::after {
-  position: absolute;
   display: block;
   content: '';
-  width: 120px;
+  width: 20px;
   height: 1px;
   margin-left: 6px;
   margin-right: 6px;
@@ -395,21 +433,9 @@ ul {
   flex-grow: 1;
 }
 
-.service {
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--color-secondary);
-}
-
-.service-name {
-  margin-bottom: 0;
-}
-
-.services-action {
-  display: flex;
-  justify-content: center;
+.services-button {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Achievements section*/
@@ -851,7 +877,7 @@ ul {
   width: 1px;
   height: 60px;
   background-color: var(--color-form-line);
-  transform: rotate(90deg) translate(-23px);;
+  transform: rotate(90deg) translate(-23px);
 }
 
 .contact-time-text {
