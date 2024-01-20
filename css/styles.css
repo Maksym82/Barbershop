@@ -436,8 +436,9 @@ ul {
 
 /* Achievements section*/
 .achievements-section {
-  padding-right: 75px;
-  padding-left: 100px;
+  padding: 130px 110px 130px 140px;
+  display: flex;
+  
 }
 
 .achievements-container {
@@ -448,62 +449,67 @@ ul {
 .achievements-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   max-width: 450px;
 }
 
 .achievements-item {
+  background-color: var(--color-background-secondary);
   width: 170px;
   height: 133px;
+  padding: 20px;
 }
 
-.point {
-  padding: 20px 20px;
-  background-color: var(--color-background-secondary);
+.achievements-item:nth-child(2n) {
+  margin-top: 30px;
 }
 
-.point-text {
-  margin: 0;
+.achievements-item:first-child {
+  margin-bottom: 30px;
+}
+
+.achievements-item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
+.achievements-statistics {
+  display: block;
+  color: var(--color-primary-dark);
+  text-align: center;
+  font-size: 42px;
+  line-height: 1.36;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+}
+
+.achievements-statistics-plus {
+  color: var(--color-brand);
+  font-size: 16px;
+  line-height: 1.37;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: top;
+}
+
+.achievements-explanation {
   color: var(--color-primary-dark);
   font-size: 11px;
   line-height: 1.36;
   font-weight: 600;
   text-align: center;
-}
-
-.point-number {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6px;
-  gap: 2px;
-  color: var(--color-primary-dark);
-  font-size: 42px;
-  line-height: 1.36;
-  font-weight: 200;
-  letter-spacing: 2.1px;
-}
-
-.point-number::after {
-  content: '+';
-  margin-top: 7px;
-  color: var(--color-brand);
-  font-size: 16px;
-  line-height: 1.37;
-  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .achievements-title {
-  max-width: 420px;
   margin-bottom: 20px;
 }
 
 .achievements-description {
-  max-width: 500px;
-  margin-bottom: 0;
   color: var(--color-primary);
+  width: 500px;
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 1.66;
   letter-spacing: 0.36px;
+  margin-bottom: 0;
 }
 
 /* Masters section */
