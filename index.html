@@ -26,12 +26,12 @@
     <header class="header">
       <div class="container">
         <div class="header-container">
+          <a href="#">
+            <svg class="logo-header">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
           <nav class="header-nav">
-            <a href="#">
-              <svg class="logo-header">
-                <use href="./images/icons.svg#icon-logo"></use>
-              </svg>
-            </a>
             <ul class="header-menu">
               <li>
                 <a class="header-link current" href="#about-section">О нас</a>
@@ -44,15 +44,16 @@
               <li><a class="header-link" href="#masters">Мастера</a></li>
               <li><a class="header-link" href="#contacts">Контакты</a></li>
             </ul>
+
+            <div class="header-contacts">
+              <a class="header-link header-link-tel" href="tel:+380441111111"
+                >+38 044 111 11 11
+              </a>
+              <button class="button" type="button" data-modal-open>
+                онлайн-запись
+              </button>
+            </div>
           </nav>
-          <div class="header-contacts">
-            <a class="header-link header-link-tel" href="tel:+380441111111"
-              >+38 044 111 11 11
-            </a>
-            <button class="button" type="button" data-modal-open>
-              онлайн-запись
-            </button>
-          </div>
         </div>
       </div>
     </header>
