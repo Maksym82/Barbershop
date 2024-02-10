@@ -24,25 +24,25 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-container">
-          <a href="#">
-            <svg class="logo-header">
-              <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
-          </a>
+      <div class="header-container">
+        <a class="header-logo" href="index.html">
+          <svg class="header-icon">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="header-nav-container">
           <nav class="header-nav">
             <ul class="header-menu">
-              <li>
-                <a class="header-link current" href="#about-section">О нас</a>
+              <li class="header-item">
+                <a class="header-link" href="#about-section">О нас</a>
               </li>
-              <li>
+              <li class="header-item">
                 <a class="header-link" href="#services-section"
                   >Услуги и цены</a
                 >
               </li>
-              <li><a class="header-link" href="#masters">Мастера</a></li>
-              <li><a class="header-link" href="#contacts">Контакты</a></li>
+              <li class="header-item"><a class="header-link" href="#masters">Мастера</a></li>
+              <li class="header-item"><a class="header-link" href="#contacts">Контакты</a></li>
             </ul>
 
             <div class="header-contacts">
@@ -60,35 +60,37 @@
     <main>
       <section class="hero-section">
         <div class="container">
-          <div class="hero-container">
+          <div class="soc">
             <ul class="hero-socials">
-              <li><a class="socials-link" href="#">Instagram</a></li>
-              <li><a class="socials-link" href="#">Youtube</a></li>
+              <li class="soc-item">
+                <a
+                  class="socials-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="soc-item">
+                <a
+                  class="socials-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
             </ul>
-            <p class="section-tagline section-tagline-light">
+          </div>
+          <div class="hero-container">
+            <p class="section-tagline section-tagline-light" lang="en">
               A hair salon for men in Kyiv
             </p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title" lang="en">BarberShop</h1>
             <p class="hero-text">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
               и со вкусом.
             </p>
-            <ul class="carousel-controls">
-              <li>
-                <button
-                  class="carousel-button carousel-prev"
-                  type="button"
-                  disabled
-                >
-                  Назад
-                </button>
-              </li>
-              <li>
-                <button class="carousel-button carousel-next" type="button">
-                  Вперед
-                </button>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
