@@ -344,14 +344,8 @@ ul {
       url(../images/Hero-mobile@2x.jpg);
   }
 }
-/* 
-@media screen and (max-width: 767px) {
-  .hero-container {
-    position: relative;
-    padding-top: 208px;
-    padding-bottom: 206px;
-  }
-} */
+
+
 @media screen and (min-width: 768px) {
   .hero-container {
     width: 576px;
@@ -446,7 +440,6 @@ ul {
 
 .hero-socials {
   position: absolute;
-  /* left: 20px; */
   bottom: 150px;
   display: flex;
   align-items: center;
@@ -525,6 +518,8 @@ ul {
 }
 
 /* About section */
+
+
 .about-section {
   padding: 130px 75px 130px 55px;
 }
