@@ -65,6 +65,7 @@ ul {
   .container {
     max-width: 480px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -119,11 +120,23 @@ ul {
 .section-title {
   font-family: 'Raleway', sans-serif;
   color: var(--color-primary-dark);
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.16;
   font-weight: 700;
-  letter-spacing: 2.1px;
+  letter-spacing: 0.05em;
   margin-bottom: 44px;
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-primary-dark);
+    font-size: 42px;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 44px;
+  }
 }
 
 .section-title-light {
@@ -345,7 +358,6 @@ ul {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .hero-container {
     width: 576px;
@@ -416,10 +428,10 @@ ul {
   .soc {
     position: absolute;
     display: flex;
-    
+
     width: 85px;
     height: 680px;
-   
+
     padding: 0 30px 0 30px;
   }
 }
@@ -447,8 +459,6 @@ ul {
   transform: rotate(-90deg) translate(-20px);
   transform-origin: top left;
 }
-
-
 
 .hero-socials::before {
   position: absolute;
@@ -519,7 +529,6 @@ ul {
 
 /* About section */
 
-
 .about-section {
   padding: 130px 75px 130px 55px;
 }
@@ -534,6 +543,12 @@ ul {
   gap: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .about-images {
+    display: none;
+  }
+}
+
 .about-content {
   max-width: 500px;
 }
@@ -543,10 +558,19 @@ ul {
 }
 
 .about-first-text {
-  font-size: 18px;
-  line-height: 1.66;
-  letter-spacing: 0.36px;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-first-text {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
 }
 
 .about-second-text {
