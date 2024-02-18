@@ -607,6 +607,12 @@ ul {
   max-width: 500px;
 }
 
+@media screen and (max-width: 768px) {
+  .about-title {
+    max-width: 330px;
+  }
+}
+
 .about-title {
   margin-bottom: 20px;
 }
