@@ -101,7 +101,7 @@ ul {
   font-size: 11px;
   line-height: 1.36;
   font-weight: 600;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -693,12 +693,29 @@ ul {
   }
 }
 
-
 .services-container {
-  display: flex;
-  padding: 0;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  padding: 30px;
   margin-bottom: 50px;
 }
+
+@media screen and (min-width: 768px) {
+  .services-container {
+    padding: 30px 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services-container {
+    display: flex;
+    padding: 0;
+  }
+}
+
 
 .services-list {
   width: 585px;
