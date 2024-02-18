@@ -763,9 +763,6 @@ ul {
   .services-list-left .services-item:last-child {
     margin: 0;
   }
-  .services-list-right .services-item:last-child {
-    margin: 0;
-  }
 }
 
 .services-item::after {
@@ -780,14 +777,21 @@ ul {
 
 .service-name {
   color: var(--color-secondary);
-  font-size: 18px;
-  line-height: 1.66;
-  letter-spacing: 0.36px;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
   margin-bottom: 0;
 }
 
 .service-name:last-child {
   order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .service-name {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
 
 .services-button {
