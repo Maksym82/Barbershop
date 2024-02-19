@@ -1284,7 +1284,7 @@ ul {
 
 .modal {
   position: absolute;
-  min-width: 530px;
+  min-width: 100%;
   min-height: 400px;
   border-radius: 10px;
   padding: 30px;
@@ -1294,6 +1294,18 @@ ul {
   transform: translate(-50%, -50%);
   transform: scale(1);
   transition: transform 500ms;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal {
+    min-width: 530px;
+  }
 }
 
 .backdrop.is-hidden .modal {
