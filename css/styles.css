@@ -847,6 +847,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .achievements-list {
+    margin-right: 130px;
+  }
+}
+
 .achievements-item {
   padding: 20px 30px;
   margin-bottom: 30px;
