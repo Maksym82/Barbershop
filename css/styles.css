@@ -815,7 +815,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .achievements-container {
-    padding: 100px 0;
+    padding: 100px 39px;
   }
 }
 
@@ -830,7 +830,6 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /* max-width: 418px; */
 }
 
 @media screen and (min-width: 480px) {
@@ -847,12 +846,6 @@ ul {
     margin-left: auto;
   }
 }
-
-/* .achievements-list {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 450px;
-} */
 
 .achievements-item {
   padding: 20px 30px;
@@ -877,8 +870,8 @@ ul {
 .achievements-item:first-child {
   margin-bottom: 30px;
 }
-.achievements-item:nth-child(2n=+1) {
-  margin-right: 30px;
+.achievements-item:nth-child(2n + 1) {
+  margin-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -894,26 +887,6 @@ ul {
   }
 }
 
-
-/* .achievements-item {
-  background-color: var(--color-background-secondary);
-  width: 170px;
-  height: 133px;
-  padding: 20px;
-}
-
-.achievements-item:nth-child(2n) {
-  margin-top: 30px;
-}
-
-.achievements-item:first-child {
-  margin-bottom: 30px;
-}
-
-.achievements-item:nth-child(2n + 1) {
-  margin-right: 30px;
-} */
-
 .achievements-statistics {
   display: block;
   color: var(--color-primary-dark);
@@ -921,7 +894,7 @@ ul {
   font-size: 42px;
   line-height: 1.36;
   font-weight: 700;
-  letter-spacing: 2.1px;
+  letter-spacing: 0.05em;
 }
 
 .achievements-statistics-plus {
@@ -944,15 +917,33 @@ ul {
 
 .achievements-title {
   margin-bottom: 20px;
+  max-width: 318px;
+}
+
+@media screen and (min-width: 768px) {
+  .achievements-content {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .achievements-content {
+    max-width: 470px;
+  }
 }
 
 .achievements-description {
   color: var(--color-primary);
-  width: 500px;
   font-size: 18px;
   line-height: 1.66;
-  letter-spacing: 0.36px;
-  margin-bottom: 0;
+  letter-spacing: 0.02em;
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 1280px) {
+  .achievements-description {
+    margin-bottom: 0;
+  }
 }
 
 /* Masters section */
