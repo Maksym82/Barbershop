@@ -839,7 +839,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .achievements-list {
     max-width: 450px;
     margin: 0;
@@ -864,14 +864,21 @@ ul {
     margin: 0;
   }
 }
-.achievements-item:nth-child(2n) {
-  margin-top: 30px;
+@media screen and (min-width: 480px) {
+  .achievements-item:nth-child(2n) {
+    margin-top: 20px;
+  }
 }
-.achievements-item:first-child {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) {
+  .achievements-item:first-child {
+    margin-bottom: 20px;
+  }
 }
-.achievements-item:nth-child(2n + 1) {
-  margin-right: 20px;
+
+@media screen and (min-width: 480px) {
+  .achievements-item:nth-child(2n + 1) {
+    margin-right: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -918,6 +925,12 @@ ul {
 .achievements-title {
   margin-bottom: 20px;
   max-width: 318px;
+}
+
+@media screen and (min-width: 1280px) {
+  .achievements-title {
+    max-width: 418px;
+  }
 }
 
 @media screen and (min-width: 768px) {
