@@ -272,23 +272,40 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section masters-section" id="masters">
+      <section class="section masters-section" id="masters">
         <div class="container">
-          <p class="section-tagline">Для настоящих ценителей атмосферы</p>
-          <h2 class="section-title">Наши мастера</h2>
-          <ul class="masters-list">
-            <li class="masters-item">
-              <div class="master">
-                <div class="master-image">
+          <div class="masters-container">
+            <div class="masters-container-text">
+              <p class="section-tagline">Для настоящих ценителей атмосферы</p>
+              <h2 class="section-title">Наши мастера</h2>
+            </div>
+
+            <ul class="masters-list">
+              <li class="masters-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/barberJohn-desktop@1x.jpg 1x,
+                      ./images/barberJohn-desktop@1x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barberJohn-tablet@1x.jpg 1x,
+                      ./images/barberJohn-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barberJohn-mobile@1x.jpg 1x,
+                      ./images/barberJohn-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
                   <img src="./images/barberJohn.jpg" alt="barber" />
-                  <div class="master-description">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sapiente consequatur illo itaque, numquam vitae quod
-                      deleniti officia neque doloribus id?
-                    </p>
-                  </div>
-                </div>
+                </picture>
                 <div class="master-info">
                   <h3 class="master-name">John Smith</h3>
                   <p class="master-job">Extreme Barber</p>
@@ -323,11 +340,33 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-            </li>
-            <li class="masters-item">
-              <div class="master">
-                <img src="./images/barberMichele.jpg" alt="barber" />
+              </li>
+              <li class="masters-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/barberMichele-desktop@1x.jpg 1x,
+                      ./images/barberMichele-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barberMichele-tablet@1x.jpg 1x,
+                      ./images/barberMichele-tablet@2x.jpg 2x
+                    "
+                    media="(min-width768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barberMichele-mobile@1x.jpg 1x,
+                      ./images/barberMichele-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/barberMichele.jpg" alt="barber" />
+                </picture>
+
                 <div class="master-info">
                   <h3 class="master-name">Michele Doe</h3>
                   <p class="master-job">Extreme Barber</p>
@@ -362,11 +401,33 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-            </li>
-            <li class="masters-item">
-              <div class="master">
-                <img src="./images/barberAlan.jpg" alt="barber" />
+              </li>
+              <li class="masters-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/barberAlan-desktop@1x.jpg 1x,
+                      ./images/barberAlan-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barberAlan-tablet@1x.jpg 1x,
+                      ./images/barberAlan-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/barberAlan-mobile@1x.jpg 1x,
+                      ./images/barberAlan-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/barberAlan.jpg" alt="barber">
+                </picture>
+                
                 <div class="master-info">
                   <h3 class="master-name">Alan Black</h3>
                   <p class="master-job">Extreme Barber</p>
@@ -401,12 +462,12 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="section gallery-section">
+      <!-- <section class="section gallery-section">
         <div class="container">
           <p class="section-tagline gallery-text">
             На латинском языке “барба” означает “борода”
