@@ -270,7 +270,7 @@ ul {
   .header-contacts {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 30px;
+    margin-left: 20px;
     align-items: center;
   }
 }
