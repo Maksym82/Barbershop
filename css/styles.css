@@ -1003,8 +1003,11 @@ ul {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.master {
-  text-align: center;
+.masters-item {
+  margin-bottom: 64px;
+}
+.masters-item:last-child {
+  margin-bottom: 0;
 }
 
 .master-image {
@@ -1029,6 +1032,7 @@ ul {
 }
 
 .master-info {
+  text-align: center;
   padding: 30px 20px 0 20px;
 }
 
