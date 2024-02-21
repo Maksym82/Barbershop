@@ -1071,6 +1071,7 @@ ul {
 /* Gallery section*/
 .gallery-container {
   padding: 84px 30px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1129,6 +1130,7 @@ ul {
 @media screen and (min-width: 1280px) {
   .gallery-item {
     width: 270px;
+    margin-bottom: 0;
     flex-basis: calc((100% - 90px) / 4);
   }
 }
