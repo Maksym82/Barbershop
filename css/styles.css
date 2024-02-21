@@ -1116,6 +1116,12 @@ ul {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    margin-bottom: 0;
+  }
+}
+
 .gallery-item:last-child {
   margin-bottom: 0;
 }
