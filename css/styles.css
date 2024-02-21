@@ -970,10 +970,33 @@ ul {
   background-color: var(--color-background-secondary);
 }
 
-.masters-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+.masters-container {
+  padding: 84px 30px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .masters-container {
+    padding: 100px 120px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masters-container {
+    padding: 130px 0;
+  }
+}
+
+.masters-title {
+  font-size: 42px;
+}
+
+@media screen and (min-width: 1280px) {
+  .masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .masters-item {
