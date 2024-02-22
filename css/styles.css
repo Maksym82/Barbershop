@@ -1185,10 +1185,19 @@ ul {
 .contact-section {
   background-color: var(--color-background-contacts);
   background-image: url('../images/contacts-bg.png');
-  background-position: right;
+  background-position: bottom;
   background-repeat: no-repeat;
-  max-width: 1280px;
-  margin: 0 auto;
+  background-size: 480px 496px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section {
+    background-color: var(--color-background-contacts);
+    background-image: url('../images/contacts-bg.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 768px 449px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
