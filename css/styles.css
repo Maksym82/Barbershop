@@ -478,7 +478,7 @@ ul {
   font-size: 11px;
   line-height: 1.36;
   font-weight: 600;
-  letter-spacing: 2.2px;
+  letter-spacing: 0.2em;
   color: var(--color-primary-dark);
   text-decoration: none;
   transition: color 300ms linear;
@@ -970,8 +970,8 @@ ul {
 /* Masters section */
 .masters-section {
   background-color: var(--color-background-secondary);
-   max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .masters-container {
@@ -1153,10 +1153,19 @@ ul {
 }
 
 .footer-container {
+  padding: 44px 30px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 56px 0;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 56px 0;
+  }
 }
 
 .footer-text {
@@ -1166,6 +1175,17 @@ ul {
   line-height: 1.36;
   font-weight: 600;
   letter-spacing: 2.2px;
+}
+
+.footer-container-list {
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container-list {
+    margin-bottom: 0;
+  }
 }
 
 .footer-list {
@@ -1192,6 +1212,8 @@ ul {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 480px;
+  /* max-width: 480px;
+  margin: 0 auto; */
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -1234,6 +1256,8 @@ ul {
     background-image: url('../images/contacts-desktop@2x.png');
   }
 }
+
+
 
 @media screen and (min-width: 1280px) {
   .contact-container {
