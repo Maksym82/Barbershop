@@ -1195,7 +1195,7 @@ ul {
 
 .contact-form {
   width: 50%;
-  padding-left: 40px;
+  padding: 130px 0 130px 0;
 }
 
 .form-container {
@@ -1316,7 +1316,7 @@ ul {
 /* Contact info */
 .contact-info {
   width: 50%;
-  padding-left: 100px;
+  padding: 130px 0 130px 100px;
 }
 
 .contact-title {
