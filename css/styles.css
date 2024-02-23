@@ -365,6 +365,19 @@ ul {
   }
 }
 
+/* Mobile-menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 337px;
+  background-color: var(--color-white);
+  transform: translateX(100%);
+}
+
 /* Hero section */
 
 .hero-container {
