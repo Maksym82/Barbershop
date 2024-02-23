@@ -357,6 +357,15 @@ ul {
   background-color: transparent;
   border: none;
   fill: var(--color-white);
+  cursor: pointer;
+}
+
+.burger-menu-open:hover,
+.burger-menu-open:focus {
+  fill: var(--color-brand);
+}
+.icon-burger-open {
+  transition: fill 300ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -374,8 +383,44 @@ ul {
   bottom: 0;
   width: 100%;
   max-width: 337px;
+  max-height: 796px;
   background-color: var(--color-white);
   transform: translateX(100%);
+  transition: transform 1s linear;
+  
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-container {
+  padding: 118px 0 0 40px;
+}
+
+.burger-menu-close {
+  position: absolute;
+  top: 48px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.burger-menu-close:hover,
+.burger-menu-close:focus {
+  fill: var(--color-brand);
+}
+
+.icon-burger-close {
+  transition: fill 300ms linear;
 }
 
 /* Hero section */

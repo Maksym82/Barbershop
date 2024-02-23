@@ -57,14 +57,20 @@
               онлайн-запись
             </button>
           </div>
-          <button class="burger-menu-open" type="button">
+          <button class="burger-menu-open js-open-menu" type="button">
             <svg class="icon-burger-open" width="40" height="40">
               <use href="./images/icons.svg#icon-burger-menu-open"></use>
             </svg>
           </button>
         </div>
-        <div class="mobile-menu">
-          <button type="button">Close</button>
+        <div class="mobile-menu js-menu-container">
+          <div class="mobile-menu-container">
+            <button class="burger-menu-close js-close-menu" type="button">
+              <svg class="icon-burger-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-mobile-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -762,7 +768,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
