@@ -156,6 +156,14 @@ ul {
   padding: 40px 15px 0 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .header-container {
     padding: 40px 30px 0 30px;
@@ -185,7 +193,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .header-logo {
-    margin-right: 60px;
+    margin-right: 50px;
   }
 }
 
@@ -202,8 +210,14 @@ ul {
 }
 
 .header-nav-container {
-  width: 100%;
   display: flex;
+}
+
+@media screen and (min-width: 1280px) {
+  .header-nav-container {
+    width: 100%;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -329,6 +343,25 @@ ul {
 
 .button-dark:hover {
   color: var(--color-background-primary);
+}
+
+/* Burger menu */
+@media screen and (min-width: 768px) {
+  .burger-menu-open {
+    display: none;
+  }
+}
+
+.burger-menu-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: var(--color-white);
 }
 
 /* Hero section */
@@ -1150,7 +1183,7 @@ ul {
 /* Footer */
 .footer {
   background-color: var(--color-background-secondary);
-  max-width: 1280px; 
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -1258,8 +1291,6 @@ ul {
     background-image: url('../images/contacts-desktop@2x.png');
   }
 }
-
-
 
 @media screen and (min-width: 1280px) {
   .contact-container {
