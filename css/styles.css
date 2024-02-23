@@ -346,11 +346,6 @@ ul {
 }
 
 /* Burger menu */
-@media screen and (min-width: 768px) {
-  .burger-menu-open {
-    display: none;
-  }
-}
 
 .burger-menu-open {
   display: flex;
@@ -362,6 +357,12 @@ ul {
   background-color: transparent;
   border: none;
   fill: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu-open {
+    display: none;
+  }
 }
 
 /* Hero section */
