@@ -452,6 +452,54 @@ ul {
   color: var(--color-brand);
 }
 
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-tel {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.mobile-soc {
+  position: relative;
+  padding-right: 105px;
+  margin-left: 100px;
+}
+
+.mobile-soc-item::before {
+  position: absolute;
+  top: 4px;
+  left: -70px;
+  content: '';
+  width: 1px;
+  height: 60px;
+  background-color: var(--color-primary-dark);
+  transform: rotate(90deg) translate(-23px);
+}
+
+.mobile-soc-item:first-child {
+  margin-bottom: 24px;
+}
+
+.mobile-soc-link {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.mobile-soc-link:hover {
+  color: var(--color-brand);
+}
+
 /* Hero section */
 
 .hero-container {
