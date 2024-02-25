@@ -465,6 +465,11 @@ ul {
   color: var(--color-primary-dark);
   text-decoration: none;
   margin-bottom: 24px;
+  transition: color 300ms linear;
+}
+
+.mobile-tel:hover {
+  color: var(--color-brand);
 }
 
 .mobile-soc {
@@ -494,6 +499,7 @@ ul {
   letter-spacing: 0.2em;
   color: var(--color-primary-dark);
   text-decoration: none;
+  transition: color 300ms linear;
 }
 
 .mobile-soc-link:hover {
