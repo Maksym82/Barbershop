@@ -1905,6 +1905,7 @@ ul {
   display: none;
   cursor: pointer;
   z-index: 15;
+  opacity: 0.6;
 }
 
 .scroll-up {
