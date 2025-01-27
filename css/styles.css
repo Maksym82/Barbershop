@@ -1900,12 +1900,18 @@ ul {
 /* Scroll up */
 #scrollToTop {
   position: fixed;
-  bottom: 40px;
+  bottom: 70px;
   left: 75%;
   display: none;
   cursor: pointer;
   z-index: 15;
   opacity: 0.6;
+}
+
+@media (min-width: 1280px) {
+  #scrollToTop {
+    left: 83%;
+  }
 }
 
 .scroll-up {
