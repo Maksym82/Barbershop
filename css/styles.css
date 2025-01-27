@@ -1896,3 +1896,17 @@ ul {
   width: 160px;
   height: 40px;
 }
+
+/* Scroll up */
+#scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  left: 75%;
+  display: none;
+  cursor: pointer;
+  z-index: 15;
+}
+
+.scroll-up {
+  fill: var(--color-primary-dark);
+}
