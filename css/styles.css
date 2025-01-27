@@ -85,13 +85,6 @@ ul {
   }
 }
 
-/* Section */
-/* .section {
-  padding: 130px 0;
-  width: 1280px;
-  margin: 0 auto;
-} */
-
 .section-tagline {
   display: flex;
   align-items: center;
@@ -346,7 +339,6 @@ ul {
 }
 
 /* Burger menu */
-
 .burger-menu-open {
   display: flex;
   align-items: center;
@@ -375,7 +367,6 @@ ul {
 }
 
 /* Mobile-menu */
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -508,7 +499,6 @@ ul {
 }
 
 /* Hero section */
-
 .hero-container {
   min-height: 580px;
   background-color: #303030;
@@ -706,7 +696,6 @@ ul {
 }
 
 /* About section */
-
 .about-section {
   padding: 84px 30px;
 }
@@ -984,7 +973,6 @@ ul {
 }
 
 /* Achievements section*/
-
 .achievements-container {
   display: flex;
   padding: 84px 30px;
@@ -1390,8 +1378,6 @@ ul {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 480px;
-  /* max-width: 480px;
-  margin: 0 auto; */
 }
 
 @media (min-device-pixel-ratio: 2),
