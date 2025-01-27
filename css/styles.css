@@ -1900,7 +1900,7 @@ ul {
 /* Scroll up */
 #scrollToTop {
   position: fixed;
-  bottom: 70px;
+  bottom: 67px;
   left: 75%;
   display: none;
   cursor: pointer;
